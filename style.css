@@ -78,14 +78,12 @@ a{
     color: yellow;
 }
 
-.button{
-    width: 20%;
-    border: 2px solid blue;
-    background-color: skyblue;
-    color: white;
-    border-radius: 44%;
-    margin-left: 1rem;
-    padding: .1rem;
+.btn-heart i:hover{
+    color: #aa2b1d;
+}
+
+.btn-shopping i:hover{
+    color: #92967d;
 }
 
  #first-sec{
