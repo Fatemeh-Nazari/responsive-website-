@@ -5,12 +5,15 @@
 }
 
 @font-face{
-    font-family: 'vazir-FD';
-    src: url('./fonts/Vazir-Light-FD.woff');
+    font-family: "Vazir-Light-FD";
+    src: url('./fonts/Vazir-Light-FD.eot') format('eot');
+    src: url('./fonts/Vazir-Light-FD.ttf') format('ttf');
+    src: url('./fonts/Vazir-Light-FD.woff') format('woff');
+    src: url('./fonts/Vazir-Light-FD.woff2') format('woff2');
 }
 
 body{
-    font-family: 'vazir-FD';
+    font-family: "Vazir-Light-FD";
 }
 
 p{
@@ -42,6 +45,10 @@ main{
 a{
     list-style: none;
     margin: 2rem;
+}
+
+img.opacity{
+    opacity: .70;
 }
 
 .card{
@@ -78,14 +85,24 @@ a{
     color: yellow;
 }
 
-.btn-heart i:hover{
-    color: #aa2b1d;
+.btn-shopping i{
+    transition-duration: 2s;
+    transition-property: padding-left;
 }
 
-.btn-shopping i:hover{
+.btn-shopping i:hover,
+button.btn-hover:hover{
     color: #92967d;
+    width: 50px;
 }
 
+.btn-hover{
+    transition: width 2s ease-in;
+}
+
+button.btn-hover:hover{
+    width: 50px;
+}
  #first-sec{
     display: flex;
     margin: 1rem;
@@ -98,8 +115,9 @@ a{
 
 #footer-sec{
     display: flex;
-    height: 20rem;
+    height: 15rem;
     background-color: #151515;
+    color: #f3f4ed;
 }
 
 .footer-icon i{
@@ -109,3 +127,4 @@ a{
 .footer-icon i:hover{
     color: snow;
 }
+
